@@ -1,13 +1,13 @@
 
-# react-native-shine-label-react-native
+# react-native-shine-label
 
 ## Getting started
-
-`$ npm install react-native-shine-label-react-native --save`
+## Not work yet
+`$ npm install react-native-shine-label --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-shine-label-react-native`
+`$ react-native link react-native-shine-label`
 
 ### Manual installation
 
@@ -15,7 +15,7 @@
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-shine-label-react-native` and add `RNShineLabelReactNative.xcodeproj`
+2. Go to `node_modules` ➜ `react-native-shine-label` and add `RNShineLabelReactNative.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNShineLabelReactNative.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
@@ -26,28 +26,23 @@
   - Add `new RNShineLabelReactNativePackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-shine-label-react-native'
-  	project(':react-native-shine-label-react-native').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-shine-label-react-native/android')
+  	include ':react-native-shine-label'
+  	project(':react-native-shine-label').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-shine-label/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-shine-label-react-native')
+      compile project(':react-native-shine-label')
   	```
-
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNShineLabelReactNative.sln` in `node_modules/react-native-shine-label-react-native/windows/RNShineLabelReactNative.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using Shine.Label.React.Native.RNShineLabelReactNative;` to the usings at the top of the file
-  - Add `new RNShineLabelReactNativePackage()` to the `List<IReactPackage>` returned by the `Packages` method
 
 
 ## Usage
 ```javascript
-import RNShineLabelReactNative from 'react-native-shine-label-react-native';
+import ShineLabelView from 'react-native-shine-label';
 
+
+<ShineLabelView ref={( self ) => { this.shineLabelView = self  }}  style={{height:200, width:200}} autoStart={true} text="just a sample" fontColor="#00BBFF" font="Roboto-MediuM" fontSize={20} />
+
+this.shineLabelView.shine();
+this.shineLabelView.fadeOut();
 // TODO: What to do with the module?
-RNShineLabelReactNative;
-```
   
