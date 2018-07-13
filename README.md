@@ -1,7 +1,7 @@
 
 # react-native-shine-label
 ## Demo come first
-<img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="400" height="400" />
+<img src="https://github.com/magicmc/react-native-shine-label/blob/master/demo.gif" width="250" height="420" />
 
 ## Getting started
 <!-- ## Not work yet
