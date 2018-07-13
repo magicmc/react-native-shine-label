@@ -2,12 +2,14 @@
 # react-native-shine-label
 
 ## Getting started
-## Not work yet
-`$ npm install react-native-shine-label --save`
+<!-- ## Not work yet
+`$ npm install react-native-shine-label --save` -->
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-shine-label`
+1. git clone  https://github.com/magicmc/react-native-shine-label
+2. add `"react-native-shine-label": "file:./lib/react-native-shine-label"` in package.json
+3. run `react-native link react-native-shine-label`
 
 ### Manual installation
 
